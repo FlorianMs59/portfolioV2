@@ -1,0 +1,170 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box; 
+  }
+  
+  body {
+    height: 100vh;
+    background: #131416;
+    
+  }
+  /* HEADER */
+
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  p {
+    z-index:1;
+  }
+  .btn {
+    padding: 12px 24px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:40px;
+    font-size:20px;
+    /*z-index:-1;*/
+    color: #fff;
+    border: 2px solid orange;
+    overflow:hidden;
+    cursor:pointer;
+    background: #131416;
+    margin-right:8px;
+  }
+  
+  .btn::after {
+    content: "";
+    position:absolute;
+    width:100%;
+    height:80px;
+    margin:0;
+    padding:0;
+    left:0;
+    top:40px;
+    background: orange;
+    border-radius: 50% 50% 0 0;
+    transition: all .6s;
+  }
+  
+  .btn:hover::after {
+    top: -10px;
+    border-radius: 0;
+  }
+
+  /* BOX */
+  .box {
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .box::before,
+  .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+    width: 100%;
+    height: 100%;
+    transform: scale(1.02);
+    z-index: -1;
+    background-size: 500%;
+    animation: animate 20s infinite;
+  }
+  
+  .box::after {
+    filter: blur(20px);
+  }
+  
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
+  }
+  
+.boby {
+    width: 394px;
+    height: 294px;
+    background: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/137631647_913196082840519_5448157713520438322_n.jpg?_nc_cat=107&ccb=3&_nc_sid=09cbfe&_nc_ohc=rjLrYnxiYLgAX8quzdT&_nc_ht=scontent-cdg2-1.xx&oh=4e777ba10a93977b2c67d83fcb19e568&oe=60558515') center top no-repeat;
+    transition: all .8s;
+    position: relative;
+}
+.boby:hover {
+    background: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/137631647_913196082840519_5448157713520438322_n.jpg?_nc_cat=107&ccb=3&_nc_sid=09cbfe&_nc_ohc=rjLrYnxiYLgAX8quzdT&_nc_ht=scontent-cdg2-1.xx&oh=4e777ba10a93977b2c67d83fcb19e568&oe=60558515') left top no-repeat;
+
+}
+
+h2 {
+    margin-left: 8px;
+    margin-top: 6px;
+    opacity: 0;
+    color: #131416;
+    transition: all 1.2s;
+}
+
+.boby:hover h2 {
+    opacity: 1;
+}
+
+.boby:hover a {
+    opacity: 1;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #131416;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    opacity: 0;
+    margin-bottom: 8px;
+    justify-content: space-around;
+    transition: all 1.5s;
+
+}
+.icons {
+    position: absolute;
+    bottom: 50px;
+    left: 8px;
+}
+
+.icons i {
+    height: 80px;
+    width: 80px;
+}
+
+/* BTN2 En savoir plus */
+
+.button {
+  text-decoration:none;
+  color:white;
+  font-family: arial,sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  background-color: #fc5185;
+  border-radius:10px;
+  padding:20px 24px;
+  box-shadow: 0 0 50px -10px #CD106E;
+  transition: all .3s;
+  text-transform:uppercase;
+  cursor:pointer;
+  z-index:1;
+}
+.button:hover {
+  box-shadow: 0 0 60px -5px #CD106E;
+}
