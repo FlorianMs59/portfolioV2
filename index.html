@@ -18,7 +18,12 @@
 <body>
     
     <section id="section1">
-        <h1 class="titre1">Bienvenue sur mon Portfolio<span class="typewriter"></span></h1>
+        <h1 class="titre1 aos-item"
+            data-aos="fade-down"
+            data-aos-delay="600"
+            data-aos-duration="800"
+        >
+        Bienvenue sur mon Portfolio<span class="typewriter"></span></h1>
         <div class="card" >
             <div class="card-img"></div>  
                 <h2 class="titre2"><span class="lettreB">F</span>lorian <span class="lettreB">M</span>yens</h2>
@@ -30,30 +35,86 @@
                 <a href="#"><i id="icone5" class="icones fab fa-facebook fa-2x"></i></a>
             </div>
             <!-- Button pour mobile -->
-        </div>
+        </div>        
     </section>
+
+    <div class="arrow">
+        <a href="#section2" id="arrowTop">
+            <i class="items fas fa-angle-down fa-2x"></i>
+            <i class="items2 fas fa-angle-down fa-2x"></i>
+            <i class="items3 fas fa-angle-down fa-2x"></i>
+        </a>       
+    </div>
 
 
     <!-- Accueil -->
-    <!-- <div id="section2">
+    <div id="section2">
         
-        <div class="laptop rellax aos-item" data-rellax-speed="2.5"
+        <div class="laptop rellax aos-item" data-rellax-speed="2"
                 data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-duration="800"
+                data-aos-duration="600"
         > 
-        
-        </div>
+        </div>    
+            <p class="txtRight">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga totam iste obcaecati facilis harum accusantium necessitatibus repellendus sit repudiandae, consequuntur maxime esse rem voluptates, tempora est quam asperiores. Exercitationem magni, delectus dolor quis ipsa quae animi dolorum modi repellendus hic provident similique ipsum earum. Dicta sint eos consequatur voluptatem est.
+            </p>
 
-        <div class="computer rellax aos-item" data-rellax-speed="2.5"
-                data-aos="fade-right"
-                data-aos-delay="500"
+        <div class="computer aos-item rellax" 
+                data-aos="flip-up"
+                data-aos-delay="100"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
                 data-aos-duration="800"
+                data-aos-anchor-placement="center-bottom"
+                data-rellax-speed="3"
+
         >
+        </div>    
+            <p class="txtLeft">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non voluptatibus eaque, optio eum, sequi distinctio eos incidunt doloremque delectus fugiat ad nisi id cupiditate similique. Eaque sed doloribus odio quidem eveniet animi vel inventore sit tempore est ea quisquam quos adipisci perspiciatis accusantium quasi repudiandae, veritatis soluta facere maiores?
+            </p>
+    </div>
+
+    <div id="section3">
+        
+        <div class="contact">
+            <h3>Contactez-moi</h3>
+            <div class="card_contact">
+               
+
+                <label for="firstname">Prénom <span class="blue">*</span></label>
+                <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                <p class="comments"></p>
+
+                <label for="name">Nom <span class="blue">*</span></label>
+                <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                <p class="comments"></p>
+
+                <label for="email">Email <span class="blue">*</span></label>
+                <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                <p class="comments"></p>
+
+                <label for="phone">Téléphone</label>
+                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                <p class="comments"></p>
+
+
+                <label for="message">Message <span class="blue">*</span></label>
+                <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+                <p class="comments"></p>
+
+                <p class="blue"><strong>* Ces informations sont requises.</strong></p>
+
+
+                <input type="submit" class="button1" value="Envoyer">
+
+                <p class="thank-you"></p>
+
+
+            </div>
         </div>
-
-    </div> -->
-
+        
+    </div>
 
 
     <!-- Font awesome -->
