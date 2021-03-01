@@ -38,3 +38,19 @@ new Typewriter(txtAnim, {
 .pauseFor(1500)
 .start()
 /* Fin TypeWriter */
+
+// Retour haut de page
+
+$("#arrowTop").on("click", function(event){    
+  event.preventDefault();
+  
+  var hash = this.hash;
+  
+  $('body,html').animate({
+    scrollTop: $(hash).offset().top
+  } , 1000 , function(){
+    window.location.hash = hash;
+  })
+  
+});
+
